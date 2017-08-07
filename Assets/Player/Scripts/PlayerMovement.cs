@@ -45,8 +45,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		float horz = Input.GetAxisRaw("Horizontal");
 		Move(horz);
-
-		Jump(horz);
+		Jump();
 	}
 
 	private void Move(float horz)
@@ -55,7 +54,7 @@ public class PlayerMovement : MonoBehaviour {
 		_rb2d.AddForce(transform.right * horz * speed);
 	}
 
-	private void Jump(float horz)
+	private void Jump()
     {
         bool grounded = IsGrounded();
         switch (_jumpState)
@@ -63,12 +62,12 @@ public class PlayerMovement : MonoBehaviour {
             case JumpState.GROUND:
                 if (grounded && Input.GetButtonDown("Jump"))
                 {
-                    _rb2d.AddForce(Vector2.up * _jumpMinForce + new Vector2(horz, 0f) * _jumpHorzInertiaMultiplier);
+                    _rb2d.AddForce(Vector2.up * _jumpMinForce + new Vector2(0, _rb2d.velocity.y) * _jumpHorzInertiaMultiplier);
                     _jumpState = JumpState.ON_AIR;
                     _jumpedTime = Time.time;
                 }
                 else if (!grounded)
-                    _jumpState = GetFALLING();
+                    _jumpState = JumpState.FALLING;
                 break;
             case JumpState.ON_AIR:
                 if (Input.GetButtonUp("Jump") || Time.time - _jumpedTime > _jumpMaxTime)
@@ -84,11 +83,6 @@ public class PlayerMovement : MonoBehaviour {
                 }
                 break;
         }
-    }
-
-    private static JumpState GetFALLING()
-    {
-        return JumpState.FALLING;
     }
 
     private bool IsGrounded()

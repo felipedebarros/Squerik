@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61845094323511736}
   - component: {fileID: 50095079737553682}
   - component: {fileID: 114753263692636498}
+  - component: {fileID: 95366251057224654}
   m_Layer: 0
   m_Name: Erik
   m_TagString: Untagged
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500948171700994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15.88, y: -2.385, z: 0}
   m_LocalScale: {x: 0.9, y: 2.2, z: 1}
   m_Children:
   - {fileID: 4472206578943486}
@@ -143,6 +144,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95366251057224654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500948171700994}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 479b5695dc2c61e4c8d09618c2c18708, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114753263692636498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -157,9 +175,9 @@ MonoBehaviour:
   _jumpMinForce: 250
   _jumpForceIncrements: 30
   _jumpMaxTime: 0.2
-  _jumpHorzInertiaMultiplier: 5
-  _walkSpeed: 30
-  _airSpeed: 8
+  _jumpHorzInertiaMultiplier: 0.1
+  _walkSpeed: 25
+  _airSpeed: 10
   _groundDetection: {fileID: 4472206578943486}
   _groundLayer:
     serializedVersion: 2
@@ -178,7 +196,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a851b3058d99d9841934624224e63c6d, type: 2}
+  - {fileID: 2100000, guid: 06f626a5e9a7b0347902269d8eed0c09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

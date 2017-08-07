@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squerik", "Assembly-CSharp.csproj", "{D11F5B14-5767-A819-74E1-3110039D21A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squerik", "Assembly-CSharp-Editor.csproj", "{7A6CE3AE-C3E7-2F36-F507-3FA5BAA7F235}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{D11F5B14-5767-A819-74E1-3110039D21A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D11F5B14-5767-A819-74E1-3110039D21A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D11F5B14-5767-A819-74E1-3110039D21A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6CE3AE-C3E7-2F36-F507-3FA5BAA7F235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6CE3AE-C3E7-2F36-F507-3FA5BAA7F235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6CE3AE-C3E7-2F36-F507-3FA5BAA7F235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6CE3AE-C3E7-2F36-F507-3FA5BAA7F235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

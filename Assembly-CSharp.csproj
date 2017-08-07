@@ -51,7 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Player\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Camera\FollowDirection\Classes\FollowDirection.cs" />
+     <Compile Include="Assets\Scripts\Camera\FollowDirection\Classes\FollowLeft.cs" />
+     <Compile Include="Assets\Scripts\Camera\FollowDirection\Classes\FollowRight.cs" />
+     <Compile Include="Assets\Scripts\Camera\MirrorCamera.cs" />
+     <Compile Include="Assets\Scripts\Util\Error.cs" />
+     <None Include="Assets\Scripts\Shaders\MirrorShader.shader" />
+     <None Include="Assets\Scripts\Shaders\VanishingPlatformShader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
