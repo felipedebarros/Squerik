@@ -180,6 +180,8 @@ GameObject:
   - component: {fileID: 815544639}
   - component: {fileID: 815544638}
   - component: {fileID: 815544643}
+  - component: {fileID: 815544644}
+  - component: {fileID: 815544645}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -271,6 +273,36 @@ MonoBehaviour:
   _target: {fileID: 1445971562}
   _beginFollowPoint: {fileID: 1156699303}
   _direction: {fileID: 11400000, guid: 6fb6ba1c397b4d048904915c34ae04ae, type: 2}
+--- !u!114 &815544644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815544637}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e02cfbce2707b2448300d1f5b8c15c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectMaterial: {fileID: 2100000, guid: fbbd9f3070d880e4eb34bbf2921e0cc8, type: 2}
+  _iterator: 0
+--- !u!95 &815544645
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815544637}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f67137cc3e652bd47b3ab8929dc7446f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1156699302
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +344,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4175341065697946, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.385
+      value: -2.395
       objectReference: {fileID: 0}
     - target: {fileID: 4175341065697946, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -337,19 +369,6 @@ Prefab:
     - target: {fileID: 4175341065697946, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982724875456420, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 1500948171700994, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1982724875456420, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9400df8286aa24644b9643463f18a2d3, type: 2}

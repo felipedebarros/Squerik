@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\ScriptableObjectUtility.cs" />
      <None Include="Assets\Scripts\Shaders\MirrorShader.shader" />
+     <None Include="Assets\Scripts\Shaders\FadeEffect.shader" />
      <None Include="Assets\Scripts\Shaders\VanishingPlatformShader.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>

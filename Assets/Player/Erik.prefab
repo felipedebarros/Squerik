@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50095079737553682}
   - component: {fileID: 114753263692636498}
   - component: {fileID: 95366251057224654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Erik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4472206578943486}
   - component: {fileID: 61123724829748382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundDetection
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500948171700994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.88, y: -2.385, z: 0}
+  m_LocalPosition: {x: -14.87, y: -2.395, z: 0}
   m_LocalScale: {x: 0.9, y: 2.2, z: 1}
   m_Children:
   - {fileID: 4472206578943486}
@@ -172,12 +172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fb90a9195696848b977f9a48970bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpMinForce: 250
+  _jumpMinForce: 120
   _jumpForceIncrements: 30
   _jumpMaxTime: 0.2
-  _jumpHorzInertiaMultiplier: 0.1
-  _walkSpeed: 25
-  _airSpeed: 10
+  _jumpHorzInertiaMultiplier: 0.05
+  _walkSpeed: 17
+  _airSpeed: 7
   _groundDetection: {fileID: 4472206578943486}
   _groundLayer:
     serializedVersion: 2

@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 113
+  controlID: 46
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 47
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 13
+  controlID: 48
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,14 +292,16 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107881254366897942, guid: 479b5695dc2c61e4c8d09618c2c18708, type: 2}
     - {fileID: 1107810865822655926, guid: 8bf67cad886113c4db9d5bec6697065e, type: 2}
+    - {fileID: 1107164204414422106, guid: f67137cc3e652bd47b3ab8929dc7446f, type: 2}
     m_ValueSerializationHelper:
     - {x: 642.60004, y: 326.2}
     - {x: 589.60004, y: 326.2}
+    - {x: 673.60004, y: 313.00006}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 8bf67cad886113c4db9d5bec6697065e,
+  m_AnimatorController: {fileID: 9100000, guid: f67137cc3e652bd47b3ab8929dc7446f,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107810865822655926, guid: 8bf67cad886113c4db9d5bec6697065e,
+  - m_Target: {fileID: 1107164204414422106, guid: f67137cc3e652bd47b3ab8929dc7446f,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -336,7 +338,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 690
-    width: 1479
+    width: 1428
     height: 368
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
@@ -378,19 +380,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts/Camera/FollowDirection
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Shaders
+  - Assets/Scripts/Camera/FollowDirection
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\felip_000\OneDrive\Documentos\Unity Projects\Squerik
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 21}
-    m_SelectedIDs: 1e260000
-    m_LastClickedID: 9758
-    m_ExpandedIDs: 000000001e260000262600006226000064260000662600006c2600000427000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
+    m_ExpandedIDs: 00000000242600003a2700003c2700003e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,7 +420,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e260000262600006226000064260000662600006c26000004270000
+    m_ExpandedIDs: 00000000242600002e2600003a2600004026000070260000722600003a2700003c2700003e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,9 +622,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 42.917168
+    m_Target: 43.682053
     speed: 2
-    m_Value: 42.917168
+    m_Value: 43.682053
   m_Ortho:
     m_Target: 1
     speed: 2
